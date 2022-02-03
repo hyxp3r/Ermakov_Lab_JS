@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>Лабораторная работа №1</title>
+        <script src="script.js"> </script>
+        
+    </head>
+   
+    <body>
+        <select onchange="showDescription(this)">
+            <option value="A"> Категория А </option>
+            <option value="B"> Категория B </option>
+            <option value="C"> Категория C </option>
+            <option value="D"> Категория D </option>
+            <option value="E"> Категория E </option>
+        </select>
+        <span> <b>Описание</b></span>
+        <span id="description">Мотоциклы</span>
+        <br>
+        <br>
+
+        <!--Делители--> 
+
+        <input type="number" value="", min="2" onchange="showDeliteli(this)">
+        <span> <b>Делители</b></span>
+        <span id="deliteli">  </span>
+        <br>
+        <br>
+
+        <!--Изменение цвета--> 
+        
+        <input type="range" min="0" max="255" value="0" oninput="changecolor(this)">
+        <input background id="mycolor" value="Изменяемый цвет">
+        <span id="color-text"> </span> 
+        <br>
+        <br>
+
+        <!--Radio--> 
+
+        <input id="A" type="radio" name="category" checked = "true" onchange="ShowDescriptions_2('A')">
+        <label for = "A">Категория А</label>
+        <br>
+        <input id="B" type="radio" name="category"  onchange="ShowDescriptions_2('B')">
+        <label for = "B">Категория B</label>
+        <br>
+        <input id="C" type="radio" name="category"  onchange="ShowDescriptions_2('C')">
+        <label for = "C">Категория C</label>
+        <br>
+        <input id="D" type="radio" name="category"  onchange="ShowDescriptions_2('D')">
+        <label for = "D">Категория D</label>
+        <br>
+        <input id="E" type="radio" name="category"  onchange="ShowDescriptions_2('E')">
+        <label for = "E">Категория E</label>
+        <br>
+        <br>
+        <span> <b>Описание:</b></span> 
+        <br>
+        <span id="description_2"> Мотоциклы </span>
+        <br>
+        <br>
+
+        <!--Молоко--> 
+        <span>Цена кофе:</span>
+        <input id="coffe" type="number" value="" step="0.05" onchange="calculate()">
+        <br>
+        <input type="checkbox" id="check"  onchange="calculate()">
+        <label for="check"> Наличие молока</label>
+        <br>
+        <span>Цена молока:</span>
+        <input id="milk" type="number" value="1.35" step="0.05" onchange="calculate()">
+        <br>
+        <span>Итог:</span>
+        <input id="total" type="text" value="">
+
+
+
+
+    
+    
+
+   
+
+
+        
+    </body>
+</html>
