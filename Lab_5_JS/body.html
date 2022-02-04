@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>Лабораторная работа №5</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"> </script>
+        
+    </head>
+   
+    <body >
+        <div id="header">
+            <img class="img_top" width="226" height="80" src="https://nsuem.ru/local/assets/images/logo.png">
+            <div class="text-header">
+                <p class="p-header">Выполнил: Ермаков Евгений Николаевич <br> Группа: ПИ901 <br> <a href="https://github.com/hyxp3r/Ermakov_Lab_JS.git">Перейти ко всем лабам</a> </p> 
+                 
+                
+                </div>
+        </div>
+
+        <h1 style="text-align:center;"> Лабораторная работа №1 </h1>
+        <br>
+        <h2 style="text-align:center;"> Практическое задание №2 </h2>
+       
+        <!--Див для первого канваса-->
+        <div style="width:300; height:400; margin:auto;  ">
+            
+            <!--Определение канваса-->
+            
+            <canvas style="border: 1px solid black" id="canvas" width='300' height='200'  > </canvas>
+            <br>
+            <br>
+       
+            <!--Поля для заполнения-->
+            
+            <!--Поля координат-->
+            <span> <b>Координаты: </b> </span>
+            <span>x</span> 
+            <input id="x"  style="width:60" type="number" value="0" min="0" max="300" />
+            <span>y</span> 
+            <input id="y" style="width:60" type="number" value="0" min="0" max="200" />
+            <br>
+            <br>
+            
+            <!--Поля размера-->
+            <span><b>Размер:</b> </span>
+            <span>width</span> 
+            <input id="width" style="width:60" type="number" value="0" min="0" max="300" />
+            <span>height</span> 
+            <input id="height"  style="width:60" type="number" value="0" min="0" max="200" />
+            <br>
+            <br>
+           
+            <!--Поля цвета-->
+            <span><b> Цвет:</b>  </span>
+            <span>R</span> 
+            <input id="R" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('R')"  />
+            <span>G</span> 
+            <input id="G" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('G')"  />
+            <span>B</span> 
+            <input id="B" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('B')" />
+            <br>
+            <br>
+            
+            <!--Кнопка запуска функции draw() -->
+            <input style="display:block; margin:auto; " type="button" id="start" value="Построить прямоугольник" onclick="draw()">
+ 
+        </div>
+        <br>
+        <br>
+        <h2 style="text-align:center;"> Практическое задание №3 </h2>
+        <!--Див для второго канваса-->
+        <div style="width:400; height:600; margin:auto;">
+            
+            <!--Определение канваса-->
+            <canvas id="canvas_2" style=" border:1px solid black " width='400' height='400'> </canvas>
+            <br>
+            <br>
+
+            <!--Поля для количества углов-->
+            <span><b>Количество углов:</b> </span>
+            <input id="n" style="width:60" type="number" value="4" min="4" max="12" onchange="on_change('n')"  />
+            <br>
+            <br>
+           
+            <!--Поля для цвета контура-->
+            <span><b> Цвет контура:</b>  </span>
+            <span>R</span> 
+            <input id="R_c" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('R_c')"  />
+            <span>G</span> 
+            <input id="G_c" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('G_c')"  />
+            <span>B</span> 
+            <input id="B_c" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('B_c')"  />
+            <br>
+            <br>
+            
+            <!--Поля для цвета заливки-->
+            <span><b> Цвет заливки:</b>  </span>
+            <span>R</span> 
+            <input id="R_b" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('R_b')" />
+            <span>G</span> 
+            <input id="G_b" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('G_b')" /> 
+            <span>B</span> 
+            <input id="B_b" style="width:60" type="number" value="0" min="0" max="255" onchange="on_change('B_b')"  />
+            <br>
+            <br>
+            
+            <!-- Чек бокс, включающий заливку -->
+            <input type="checkbox" id="check" checked onclick="check_test()">
+            <label for="check"> Использовать заливку</label>
+            <br>
+            <br>
+
+            <!-- Кнопка запуска функции draw_2() -->
+            <input style="display:block; margin:auto; " type="button" id="start_2" value="Построить многоугольник" onclick="draw_2()">
+
+
+            
+        </div>
