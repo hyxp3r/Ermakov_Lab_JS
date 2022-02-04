@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>Лабораторная работа №3</title>
+        <script src="script.js"> </script>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+   
+    <body>
+        <div id="header">
+            <img class="img_top" width="226" height="80" src="https://nsuem.ru/local/assets/images/logo.png">
+            <div class="text-header">
+                <p class="p-header">Выполнил: Ермаков Евгений Николаевич <br> Группа: ПИ901 <br> <a href="https://github.com/hyxp3r/Ermakov_Lab_JS.git">Перейти ко всем лабам</a> </p> 
+           </div>
+        </div>
+
+        <h1 style="text-align:center;"> Лабораторная работа №3 </h1>
+        <div style="width:480px; margin:auto" height="500px">
+            
+            <img id="picture"  src="log1.jpg" style=" width:480px; height:450px; border:1px solid black" onclick=" skip_picture_manual()">
+            <br>
+            <br>
+            <span style="display:block;  width:200px; margin:auto;">
+            <input id="button_1" type="button" value="Авто режим"  onclick= " auto= true; setInterval('skip_picture_auto()',1000)">
+            <input id="button_2" type="button" value = "Ручной режим" onclick="turnOn_manual()">
+            </span>
+            <br>
+            <span><b>Запущен:</b></span> 
+            <span id="text_value">ручной</span> 
+            <span> режим </span>
+
+            
+
+        </div>
+        
+
+    </body>
