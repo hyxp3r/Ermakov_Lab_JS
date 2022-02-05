@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>Лабораторная работа №6</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"> </script>
+        
+    </head>
+   
+    <body onload="init();">
+        <div id="header">
+            <img class="img_top" width="226" height="80" src="https://nsuem.ru/local/assets/images/logo.png">
+            <div class="text-header">
+                <p class="p-header">Выполнил: Ермаков Евгений Николаевич <br> Группа: ПИ901 <br> <a href="https://github.com/hyxp3r/Ermakov_Lab_JS.git">Перейти ко всем лабам</a> </p> 
+            </div>
+        </div>
+
+    <h1 style="text-align:center;"> Лабораторная работа №6 </h1>
+    <br>
+
+    <!-- Создание дива, содержащего канвас и кнопки-->
+    <div class="body">
+
+        <!-- Создание канваса-->
+        <canvas id="canvas" width="640" height="480"></canvas> 
+        <br>
+        <br>
+        
+        <!-- Создание кнопок управления-->
+        <span style="display:block;  width:300px; margin:auto;">  
+        <input class="button" type ="button" value="Построить фигуру 1" onclick="draw()">
+        <input class="button_2" type ="button" value="Построить фигуру 2" onclick="draw_2()">
+        </span>
+
+
+    </div>
