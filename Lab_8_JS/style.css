@@ -1,0 +1,42 @@
+#header {
+    display:flex;
+    height:170px;
+    background-color:#639FD2;
+    z-index:1;
+}
+.text-header {
+      display: flex;
+    margin-left: -20;
+   
+}
+.img_top {
+    display:flex;
+    margin:45 140 ;
+  }
+
+.p-header {
+    margin-top:50;
+    font-size: 17;
+    font-family: Arial;
+    color:white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+a {
+text-decoration: underline;
+color: white
+}
+
+a:hover {
+    color:#0e202e;
+    
+}
+
+.body {
+    margin:auto;
+    width:640;
+    height: 600;
+
+}
+
+
