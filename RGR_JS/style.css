@@ -1,0 +1,99 @@
+#header {
+    display:flex;
+    height:170px;
+    background-color:#639FD2;
+    z-index:1;
+}
+.text-header {
+      display: flex;
+    margin-left: -20;
+   
+}
+.img_top {
+    display:flex;
+    margin:45 140 ;
+  }
+
+.p-header {
+    margin-top:50;
+    font-size: 17;
+    font-family: Arial;
+    color:white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+a {
+text-decoration: underline;
+color: white
+}
+
+a:hover {
+    color:#0e202e;
+    
+}
+
+#zad_1 {
+    margin:auto;
+    width:230;
+}
+
+#zad_2 {
+    margin:auto;
+    width:290;
+}
+
+#email {
+    border-radius: 20;
+}
+
+input[type=text] {
+    width:250px;
+    
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid rgb(107, 101, 101);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+    border-radius:10px;
+    font-family:inherit;
+    font-size: inherit;
+}
+
+input[type=radio] {
+    width:15px;
+    height:15px;
+    margin: 5px 0;
+}
+
+label {
+    font-family:inherit;
+    font-size: inherit;
+}
+#form .input {
+    position: relative;
+}
+
+#img_2 {
+    position:absolute;
+    margin-left:260px;
+    margin-top: 20px;
+    width:20px;
+    height: 20px;
+
+}
+
+#zad_3 {
+    margin:auto;
+    width:640;
+}
+
+#btn_z2 {
+    display: block;
+    margin:auto;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+  
+
